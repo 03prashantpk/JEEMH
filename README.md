@@ -32,19 +32,28 @@ Follow these steps to set up the JEE Mastery Hub on your local environment:
    git clone https://github.com/03prashantpk/JEEMH.git
 
 2. Navigate to the project directory:
- `` cd JEEMH
+
+    ```bash 
+    cd JEEMH
 
 3. Install dependencies using Composer:
 
- `` composer install
+    ```bash
+    composer install
 
 4. Create a .env file by copying the .env.example file:
- `` cp .env.example .env
+
+    ```bash
+    cp .env.example .env
 
 5. Generate an application key:
- `` php artisan key:generate
+
+    ```bash
+    php artisan key:generate
 
 6. Configure the .env file with your database details:
+
+    ```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -53,13 +62,19 @@ Follow these steps to set up the JEE Mastery Hub on your local environment:
     DB_PASSWORD=your_database_password
 
 7. Migrate the database:
- `` php artisan migrate
+
+    ```bash
+    php artisan migrate
 
 8. Start the Laravel development server:
- `` php artisan serve
+
+    ```bash
+    php artisan serve
 
 9. Access the application in your web browser:
- `` http://localhost:8000
+
+    ```bash
+    http://localhost:8000
 
 
 ## How to Use
@@ -86,9 +101,6 @@ Thank you for considering contributing to JEE Mastery Hub! For details on contri
 
 To ensure a welcoming and inclusive community, please review and adhere to our [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you identify a security vulnerability within JEE Mastery Hub, please contact us via email at [admin@jeemasteryhub.com](mailto:admin@jeemasteryhub.com). All security concerns will be promptly addressed.
 
 ## License
 
