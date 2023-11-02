@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\User; // Import the User model
 use App\Models\Chapter; // Import the Chapter model

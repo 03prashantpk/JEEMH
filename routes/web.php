@@ -65,7 +65,6 @@ Route::get('/admin/users', [UsersController::class, 'ListProfile'])->name('admin
 Route::get('/admin/subjects', [SubjectsController::class, 'ListSubjects'])->name('admin.subjects');
 Route::get('/admin/addChapters', [AddChaptersController::class, 'addChapters'])->name('admin.addChapters');
 Route::post('/admin/addChapters', [AddChaptersController::class, 'submitChapters'])->name('admin.addChapters');
-
 Route::get('/admin/listAll', [ListAllChaptersController::class, 'listAllChapters'])->name('admin.listAll');
 Route::get('/admin/ListInOrganic', [ListAllChaptersController::class, 'ListInOrganic'])->name('admin.ListInOrganic');
 Route::get('/admin/ListOrganic', [ListAllChaptersController::class, 'ListOrganic'])->name('admin.ListOrganic');
@@ -79,12 +78,9 @@ Route::delete('/admin/chapters/delete/{chapterId}', [ChapterController::class, '
 // Updating Route
 Route::put('/admin/update-chapter-amount/{chapterId}', [ChapterPriceUpdateController::class, 'updateAmount'])->name('admin.updateAmount');
 
-
 //|||||||||||||| User Panel |||||||||||||||||\\
 
 Route::get('/streams/{subject_name}', [SubjectAllChapterController::class, 'showAllChapters'])->name('streams.subject');
-
-
 Route::get('/streams', function () {
     return view('browse');
 })->name('browse');
